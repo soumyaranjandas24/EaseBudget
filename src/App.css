@@ -1,7 +1,11 @@
 .container-home {
     height: 100vh;
-    background: linear-gradient(90deg, purple 20%, white);
+    background: linear-gradient(90deg, rgba(15, 15, 15, 0.6)),
+        url("https://tse4.mm.bing.net/th/id/OIP.8qfInx9J6fIDeIMYAFBbowHaED?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3");
     display: grid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     grid-template-areas: "side side main main main";
 }
 
@@ -10,13 +14,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 20px;
+    padding: 20px;
 }
 
 .heading-side {
     grid-area: side;
 }
 
+#get-started-btn{
+    background-color: rgb(83, 155, 238);
+    border: none;
+}
+
 .main-content {
     grid-area: main;
 }
+
+.main-content p{
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
