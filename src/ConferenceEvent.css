@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
 }
 
@@ -46,15 +46,17 @@ nav ul li a {
     gap: 40px;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
     margin: auto;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 16px;
+    
 }
 
 .totalAmount {
+    text-align: center;
     background-color: blue;
     border: 2px solid black;
     border-radius: 5px;
@@ -67,11 +69,13 @@ nav ul li a {
 }
 
 .event_items_box {
+    width: 80%;
     /* height: 100vh; */
-    padding-top: 20px;
+    /* padding-top: 10px; */
+    /* margin-bottom: 20px; */
 }
 
-.event_items_heading{
+.event_items_heading {
     text-align: center;
     margin: 0 auto;
     width: 50%;
@@ -81,7 +85,7 @@ nav ul li a {
     padding-top: 5px;
 }
 
-.event_items_selection{
+.event_items_selection {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -98,20 +102,22 @@ nav ul li a {
 /* Venue Room Selection cards */
 .venue_item_card,
 .addOns_item_card {
+    text-align: center;
     width: 300px;
+    margin: auto;
     height: 100%;
     background-color: rgba(1, 1, 1, 0.414);
     border-radius: 5px;
 }
 
 .venueImage img,
-.addOnsImage img{
+.addOnsImage img {
     width: 90%;
     border-radius: 5px;
 }
 
 .text,
-.cost{
+.cost {
     padding-top: 5px;
 }
 
@@ -124,17 +130,31 @@ nav ul li a {
     padding: 5px;
 }
 
-.btn-disabled{
+.checkPeopleCount{
+    /* width: 80%; */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.checkPeopleCount input{
+    height: 35px;
+    font-size: 30px;
+}
+
+.btn-disabled {
     cursor: not-allowed;
 }
 
 
 
 /* Displaying Total Amount */
-.totalAmountDisplay{
+.totalAmountDisplay {
     width: 50%;
     margin: auto;
-    height: 25vh;
+    height: 100vh;
     border-radius: 10px;
     background-color: white;
     color: black;

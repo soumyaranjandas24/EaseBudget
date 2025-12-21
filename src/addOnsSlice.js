@@ -39,10 +39,17 @@ export const addOnsSlice = createSlice({
 
     reducers: {
         incrementAvQuantity: (state, action) => {
-
+            const index = action.payload
+            if (state[index] && state[index].quantity === 3) {
+                return
+            }
+            state[index].quantity++
         },
         decrementAvQuantity: (state, action) => {
-
+            const index = action.payload
+            if (state[index] && state[index].quantity > 0) {
+                state[index].quantity--
+            }
         },
     },
 });

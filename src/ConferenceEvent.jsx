@@ -103,7 +103,15 @@ const ConferenceEvent = () => {
                     </div>
 
                     {/* Meals */}
-                    {/* <EventItems heading={"Meals Selection"} id={"meals"} /> */}
+                    <div className="event_items_box" id="meals">
+                        <div className="event_items_heading">
+                            <h1>Meals Selection</h1>
+                        </div>
+                        <div className="checkPeopleCount">
+                            <label htmlFor="people">Number of people:</label> 
+                            <input type="number" name="people" id="people" placeholder="0" />
+                        </div>
+                    </div>
                 </div >
                 :
                 <div className="totalAmountDisplay">
