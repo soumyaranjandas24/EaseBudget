@@ -108,9 +108,16 @@ const ConferenceEvent = () => {
                             <h1>Meals Selection</h1>
                         </div>
                         <div className="checkPeopleCount">
-                            <label htmlFor="people">Number of people:</label> 
+                            <label htmlFor="people">Number of people:</label>
                             <input type="number" name="people" id="people" placeholder="0" />
                         </div>
+                        <div className="meals_container">
+                            <label><input className="meals" type="checkbox" name="checkbox" id="meal01" /> meal01</label>
+                            <label><input className="meals" type="checkbox" name="checkbox" id="meal02" /> meal02</label>
+                            <label><input className="meals" type="checkbox" name="checkbox" id="meal03" /> meal03</label>
+                            <label><input className="meals" type="checkbox" name="checkbox" id="meal04" /> meal04</label>
+                        </div>
+                        <div className="totalAmount">Total Amount: ${mealsTotalCost}</div>
                     </div>
                 </div >
                 :
