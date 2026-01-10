@@ -146,17 +146,32 @@ nav ul li a {
 
 .meals_container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     height: 300px;
-    width:100%;
+    width: 600px;
+    margin: auto;
+    padding-bottom: 5px;
 }
 
-.meals{
-    height:25%;
-    width:75%;
+.meals_container label{
+    width: 45%;
+    display: flex;
+    font-size: 30px;
+    gap: 5px;
+    align-items: center;
+}
+
+.meals_container label input{
+    transform: scale(2);
+}
+
+.meals {
+    height: 25%;
+    width: 40%;
 }
 
 .btn-disabled {
@@ -169,6 +184,7 @@ nav ul li a {
 .totalAmountDisplay {
     width: 50%;
     margin: auto;
+    padding-bottom: 5px;
     height: 100vh;
     border-radius: 10px;
     background-color: white;
